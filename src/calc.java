@@ -128,20 +128,7 @@ public class calc
                         num2 = num1 % Double.parseDouble(screen.getText());
                         break;
                     case 'p':
-                        double temp = 1;
-                         temp = Math.pow(num1, num2);
-                         temp = num2 = Double.parseDouble(screen.getText());
-
-                        //num1 = Double.parseDouble(screen.getText());
-                        //double temp = 0, j = 1;
-                        //while(j < num2)
-                        //{
-                          //  temp = num1 * num1;
-                            //j++;
-                        //}
-                        //num2 = temp;
-                        //num2 = Double.parseDouble(screen.getText());
-                       // num2 = num1 * num1;  //Double.parseDouble(screen.getText());
+                        num2 = Math.pow(num1, Double.parseDouble(screen.getText()));
                         break;
                 }
                 screen.setText(Double.toString(num2));
@@ -262,4 +249,5 @@ public class calc
     private JButton button0;
     private JButton buttonEqual;
     private JButton buttonDot;
+    private JLabel lal;
 }
