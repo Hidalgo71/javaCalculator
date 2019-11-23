@@ -11,6 +11,8 @@ public class calc
     private void getOperator(String btnText)
     {
         mathOperator = btnText.charAt(0);
+        num1 = num1 + Double.parseDouble(screen.getText());
+        screen.setText("");
 
     }
     private calc()
