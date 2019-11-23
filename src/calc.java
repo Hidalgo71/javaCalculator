@@ -128,7 +128,15 @@ public class calc
                         num2 = num1 % Double.parseDouble(screen.getText());
                         break;
                     case 'p':
-                        num2 = num1 * num1;  //Double.parseDouble(screen.getText());
+                        //num1 = Double.parseDouble(screen.getText());
+                        double temp = 0, j = 1;
+                        while(j == num2)
+                        {
+                            temp = num1 * num1;
+                        }
+                        num2 = temp;
+                        num2 = Double.parseDouble(screen.getText());
+                       // num2 = num1 * num1;  //Double.parseDouble(screen.getText());
                         break;
                 }
                 screen.setText(Double.toString(num2));
