@@ -249,5 +249,4 @@ public class calc
     private JButton button0;
     private JButton buttonEqual;
     private JButton buttonDot;
-    private JLabel lal;
 }
