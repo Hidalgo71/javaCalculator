@@ -10,12 +10,12 @@ public class calc {
     }
 
     private JPanel calculator;
-    private JButton button2;
-    private JButton button5;
+    private JButton a2Button;
+    private JButton a5Button;
     private JTextField screen;
-    private JButton button3;
-    private JButton button4;
-    private JButton button7;
+    private JButton a3Button;
+    private JButton a4Button;
+    private JButton a7Button;
     private JButton buttonPlus;
     private JButton buttonMinus;
     private JButton buttonMulti;
@@ -24,7 +24,9 @@ public class calc {
     private JButton buttonRemainder;
     private JButton ButtonPower;
     private JButton ButtonC;
-    private JButton button9;
-    private JButton button1;
-    private JButton button6;
+    private JButton a9Button;
+    private JButton a1Button;
+    private JButton a6Button;
+    private JButton button0;
+    private JButton buttonEqual;
 }
