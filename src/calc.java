@@ -8,6 +8,11 @@ public class calc
     private double num2 = 0.0;
     private char mathOperator;
 
+    private void getOperator(String btnText)
+    {
+        mathOperator = btnText.charAt(0);
+
+    }
     private calc()
     {
         button0.addActionListener(new ActionListener()
