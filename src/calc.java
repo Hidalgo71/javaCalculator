@@ -105,34 +105,33 @@ public class calc
                 screen.setText(btn9Txt);
             }
         });
-        buttonPlus.addActionListener(new ActionListener()
-        {
-            @Override
-            public void actionPerformed(ActionEvent e)
-            {
-                   num1 = num1 + Double.parseDouble(screen.getText());
-                   screen.setText("");
-            }
-        });
         buttonEqual.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                if (buttonPlus.getModel().isPressed())
+                switch (mathOperator)
                 {
-                    num2 = num1 + Double.parseDouble(screen.getText());
-                    screen.setText(Double.toString(num2));
-                    num1 = 0;
+                    case '+':
+                        num2 = num1 + Double.parseDouble(screen.getText());
+                        break;
+                    case '-':
+                        num2 = num1 - Double.parseDouble(screen.getText());
+                        break;
+                    case '*':
+                        num2 = num1 * Double.parseDouble(screen.getText());
+                        break;
+                    case '/':
+                        num2 = num1 / Double.parseDouble(screen.getText());
+                        break;
+                    case '%':
+                        num2 = num1 % Double.parseDouble(screen.getText());
+                        break;
+                    case 'p':
+                        num2 = num1 * num1;  //Double.parseDouble(screen.getText());
+                        break;
                 }
-            }
-        });
-        buttonMinus.addActionListener(new ActionListener()
-        {
-            @Override
-            public void actionPerformed(ActionEvent e)
-            {
-            //    num1
+                screen.setText(Double.toString(num2));
             }
         });
         buttonC.addActionListener(new ActionListener()
@@ -141,6 +140,7 @@ public class calc
             public void actionPerformed(ActionEvent e)
             {
                 num2 = 0.0;
+                num1 = 0.0;
                 screen.setText("");
             }
         });
@@ -162,6 +162,60 @@ public class calc
                     screen.setText(btnDot);
                 }
                 buttonDot.setEnabled(true);
+            }
+        });
+        buttonPlus.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btnText = buttonPlus.getText();
+                getOperator(btnText);
+            }
+        });
+        buttonMinus.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btnText = buttonMinus.getText();
+                getOperator(btnText);
+            }
+        });
+        buttonMulti.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btnText = buttonMulti.getText();
+                getOperator(btnText);
+            }
+        });
+        buttonDivide.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btnText = buttonDivide.getText();
+                getOperator(btnText);
+            }
+        });
+        buttonRemainder.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btnText = buttonRemainder.getText();
+                getOperator(btnText);
+            }
+        });
+        buttonPower.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btnText = buttonPower.getText();
+                getOperator(btnText);
             }
         });
     }
