@@ -2,21 +2,159 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class calc {
-    public calc() {
-        button0.addActionListener(new ActionListener() {
+public class calc
+{
+    private double num1 = 0.0;
+    private double num2 = 0.0;
+    private char mathOperator;
+
+    private calc()
+    {
+        button0.addActionListener(new ActionListener()
+        {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-               String button0Text = screen.getText() + button0.getText();
-               screen.setText(button0Text);
+               String btn0Text = screen.getText() + button0.getText();
+               screen.setText(btn0Text);
             }
         });
-        button1.addActionListener(new ActionListener() {
+        button1.addActionListener(new ActionListener()
+        {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String button1Text = screen.getText() + button1.getText();
-                screen.setText(button1Text);
+                String btn1Text = screen.getText() + button1.getText();
+                screen.setText(btn1Text);
+            }
+        });
+        button2.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String btn2Text = screen.getText() + button2.getText();
+                screen.setText(btn2Text);
+            }
+        });
+        button3.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btn3Text = screen.getText() + button3.getText();
+                screen.setText(btn3Text);
+            }
+        });
+        button4.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btn4Text = screen.getText() + button4.getText();
+                screen.setText(btn4Text);
+            }
+        });
+        button5.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btn5Text = screen.getText() + button5.getText();
+                screen.setText(btn5Text);
+            }
+        });
+        button6.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btn6Txt = screen.getText() + button6.getText();
+                screen.setText(btn6Txt);
+            }
+        });
+        button7.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btn7Txt = screen.getText() + button7.getText();
+                screen.setText(btn7Txt);
+            }
+        });
+        button8.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btn8Txt = screen.getText() + button8.getText();
+                screen.setText(btn8Txt);
+            }
+        });
+        button9.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                String btn9Txt = screen.getText() + button9.getText();
+                screen.setText(btn9Txt);
+            }
+        });
+        buttonPlus.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                   num1 = num1 + Double.parseDouble(screen.getText());
+                   screen.setText("");
+            }
+        });
+        buttonEqual.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                if (buttonPlus.getModel().isPressed())
+                {
+                    num2 = num1 + Double.parseDouble(screen.getText());
+                    screen.setText(Double.toString(num2));
+                    num1 = 0;
+                }
+            }
+        });
+        buttonMinus.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+            //    num1
+            }
+        });
+        buttonC.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                num2 = 0.0;
+                screen.setText("");
+            }
+        });
+        buttonDot.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //if screen is empty
+                if (screen.getText().equals(""))
+                {
+                    screen.setText("0.");
+                }
+                else if (screen.getText().contains("."))
+                {
+                    buttonDot.setEnabled(false);
+                }
+                else
+                {
+                    String btnDot = screen.getText() + buttonDot.getText();
+                    screen.setText(btnDot);
+                }
+                buttonDot.setEnabled(true);
             }
         });
     }
@@ -49,4 +187,5 @@ public class calc {
     private JButton button6;
     private JButton button0;
     private JButton buttonEqual;
+    private JButton buttonDot;
 }
