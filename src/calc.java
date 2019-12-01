@@ -127,7 +127,7 @@ public class calc
                     case '%':
                         num2 = num1 % Double.parseDouble(screen.getText());
                         break;
-                    case 'p':
+                    case '^':
                         num2 = Math.pow(num1, Double.parseDouble(screen.getText()));
                         break;
                 }
