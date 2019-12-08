@@ -124,7 +124,7 @@ public class calc
                     case '/':
                         num2 = num1 / Double.parseDouble(screen.getText());
                         break;
-                    case '%':
+                    case '#':
                         num2 = num1 % Double.parseDouble(screen.getText());
                         break;
                     case '^':
