@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
 
 public class calc
 {
@@ -13,8 +15,67 @@ public class calc
         mathOperator = btnText.charAt(0);
         num1 = num1 + Double.parseDouble(screen.getText());
         screen.setText("");
+    }
+
+
+    private void keyPressed(KeyEvent e)
+    {
+        int keyP = e.getKeyCode();
+        if(e.getKeyCode() == KeyEvent.VK_0)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_1)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_2)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_3)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_4)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_5)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_6)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_7)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_9)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_ADD)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_DIVIDE)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_MULTIPLY)
+        {
+            screen.setText(keyP);
+        }
+        if(e.getKeyCode() == KeyEvent.VK_MINUS)
+        {
+            screen.setText(keyP);
+        }
 
     }
+
     private calc()
     {
         button0.addActionListener(new ActionListener()
