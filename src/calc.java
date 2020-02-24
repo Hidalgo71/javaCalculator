@@ -23,7 +23,7 @@ public class calc
         int keyP = e.getKeyCode();
         if(e.getKeyCode() == KeyEvent.VK_0)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_1)
         {
