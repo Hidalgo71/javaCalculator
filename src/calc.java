@@ -27,51 +27,51 @@ public class calc
         }
         if(e.getKeyCode() == KeyEvent.VK_1)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_2)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_3)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_4)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_5)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_6)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_7)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_9)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_ADD)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_DIVIDE)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_MULTIPLY)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
         if(e.getKeyCode() == KeyEvent.VK_MINUS)
         {
-            screen.setText(keyP);
+            screen.setText(String.valueOf(keyP));
         }
 
     }
